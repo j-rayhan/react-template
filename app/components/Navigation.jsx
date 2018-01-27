@@ -1,5 +1,5 @@
-var React = require('react');
-var {Link, IndexLink} = require('react-router');
+import React from 'react';
+import {Link, IndexLink} from 'react-router';
 
 var Navigation = () => {
   return (

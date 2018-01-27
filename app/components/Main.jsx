@@ -1,17 +1,22 @@
-var React = require('react');
-var Navigation = require('Navigation');
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import Home from './Home'
+import Roster from 'HelloWorld'
+import Schedule from 'HelloWorld1'
 
-var Main = (props) => {
-  return (
-    <div>
-      <Navigation/>
-      <div className="row">
-        <div className="column small-centered medium-6 large-4">
-          {props.children}
-        </div>
-      </div>
-    </div>
-  );
-}
+// The Main component renders one of the three provided
+// Routes (provided that one matches). Both the /roster
+// and /schedule routes will match any pathname that starts
+// with /roster or /schedule. The / route will only match
+// when the pathname is exactly the string "/"
+const Main = () => (
+  <main>
+    <Switch>
+      <Route exact path='/' component={Home}/>
+      <Route path='/roster' component={Roster}/>
+      <Route path='/schedule' component={Schedule}/>
+    </Switch>
+  </main>
+)
 
-module.exports = Main;
+export default Main

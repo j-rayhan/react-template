@@ -35,7 +35,9 @@ module.exports = [{
     },
     resolve: {
       alias: {
-        HelloWorld: path.resolve(__dirname, 'app/components/HelloWorld.jsx')
+        HelloWorld: path.resolve(__dirname, 'app/components/HelloWorld.jsx'),
+        HelloWorld1: path.resolve(__dirname, 'app/components/HelloWorld1.jsx'),
+        Main: path.resolve(__dirname, 'app/components/Main.jsx')
       },
       extensions: ['*', '.js', '.jsx']
     },

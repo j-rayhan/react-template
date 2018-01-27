@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import HelloWorld from 'HelloWorld';
-
-// var React = require('react');
-// var ReactDOM = require('react-dom');
-
+import { BrowserRouter } from 'react-router-dom'
+import App from './components/index';
 // var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-// var Main = require('Main');
 // var Timer = require('Timer');
 // var Countdown = require('Countdown');
 //
@@ -18,17 +13,15 @@ import HelloWorld from 'HelloWorld';
 // // App css
 // require('style!css!sass!applicationStyles')
 //
+ReactDOM.render((
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  ),
+document.getElementById('app')
+);
+
 // ReactDOM.render(
-//   <Router history={hashHistory}>
-//     <Route path="/" component={Main}>
-//       <Route path="countdown" component={Countdown}/>
-//       <IndexRoute component={Timer}/>
-//     </Route>
-//   </Router>,
+//   <HelloWorld name="JOh"/>,
 //   document.getElementById('app')
 // );
-
-ReactDOM.render(
-  <HelloWorld name="JOh"/>,
-  document.getElementById('app')
-);
