@@ -29,6 +29,6 @@ import HelloWorld from 'HelloWorld';
 // );
 
 ReactDOM.render(
-  <HelloWorld name="JOhir"/>,
+  <HelloWorld name="JOh"/>,
   document.getElementById('app')
 );

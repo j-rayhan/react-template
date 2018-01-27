@@ -986,7 +986,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //   document.getElementById('app')
 // );
 
-_reactDom2.default.render(_react2.default.createElement(_HelloWorld2.default, { name: 'JOhir' }), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(_HelloWorld2.default, { name: 'JOh' }), document.getElementById('app'));
 
 /***/ }),
 /* 16 */
