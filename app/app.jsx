@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import HelloWorld from 'HelloWorld';
+
 // var React = require('react');
 // var ReactDOM = require('react-dom');
 
@@ -27,6 +29,6 @@ import ReactDOM from 'react-dom';
 // );
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <HelloWorld name="JOhir"/>,
   document.getElementById('app')
 );

@@ -1,4 +1,4 @@
-//const path = require('path');
+const path = require('path');
 //const webpack = require('webpack');
 //const ExtractTextPlugin = require('extract-text-webpack-plugin');
 //const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -34,6 +34,9 @@ module.exports = [{
       filename: './public/bundle.js'
     },
     resolve: {
+      alias: {
+        HelloWorld: path.resolve(__dirname, 'app/components/HelloWorld.jsx')
+      },
       extensions: ['*', '.js', '.jsx']
     },
     module: {
@@ -41,7 +44,7 @@ module.exports = [{
           {
             loader: 'babel-loader',
             query: {
-              presets: ['react', 'es2015', 'stage-0']
+              presets: ['react', 'es2015']
             },
             test: /\.jsx?$/,
             exclude: /(node_modules|bower_components)/
