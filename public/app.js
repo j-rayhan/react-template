@@ -1,5 +1,5 @@
 function gra(){
-  document.write("Hello Test");
+  document.write("Hello Test rayhan");
 }
 
 gra();
