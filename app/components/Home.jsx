@@ -16,7 +16,7 @@ const Home = () => (
                             </svg>
                             <strong className="h3 text-uppercase" style={{ color: '#212121' }}>ract</strong>
                         </Link>
-                        <p className="mt-4 small">{"Enter your email address and we'll send you the instructions for resetting the password."}</p>
+                        <p className="mt-4 small">Enter your email address and we'll send you the instructions for resetting the password.</p>
                     </header>
                     <Form action="/">
                         <FormGroup className="mb-4">
